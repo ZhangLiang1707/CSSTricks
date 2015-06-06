@@ -2,6 +2,7 @@
 layout: post
 title:  "重置全部边距及填充"
 excerpt: 最近这样的做法非常流行。这些代码将毫不留情在所有浏览器中的移除所有元素的默认边距和填充。
+permalink: reset-all-margins-and-padding
 ---
 
 {% highlight html %}

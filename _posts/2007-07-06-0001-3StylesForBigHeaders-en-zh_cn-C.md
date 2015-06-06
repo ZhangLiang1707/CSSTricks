@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "简单的标题文本标题样式"
-comments: true
+permalink: 3-styles-for-big-headers
 ---
 
 下面是一些简单的标题样式
