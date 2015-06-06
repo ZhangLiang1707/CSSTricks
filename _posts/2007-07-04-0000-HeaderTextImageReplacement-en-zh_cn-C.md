@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "如何在保证 SEO 的同时使用图片标题"
+comments: true
 ---
 
 
