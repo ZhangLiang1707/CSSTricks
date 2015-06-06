@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "如何在保证 SEO 的同时使用图片标题"
-comments: true
 ---
 
 
@@ -9,13 +8,16 @@ comments: true
 
 其中一个妙招是使用一个类来替换文本标题成为图片。像往常一样使用你的标题标签，只是给它一个特别的类名称，像是 `<h1 class =“headerReplacement”>网页标题</h1>` 之后在你的 CSS 中定义将类定义成下面的样子：
 
-
-    .headerReplacement {
-       text-indent: -9999px;
-       width: 600px;
-       height: 100px;
-       background: url(pathtoyourimage) #cccccc no-repeat;
-    }
+{% highlight html %}
+<style>
+  .headerReplacement {
+     text-indent: -9999px;
+     width: 600px;
+     height: 100px;
+     background: url(pathtoyourimage) #cccccc no-repeat;
+  }
+</style>
+{% endhighlight %}
 
 这样你漂亮的图片标题就能在合适的位置替换掉难看的文本标题，当然这样做也并不会丢失页面对于搜索引擎优化的支持。同时使用这种方法还可以让使用屏幕阅读器的人或者关闭浏览网页图像或CSS的读者得到一个优雅降级版的网页。
 
