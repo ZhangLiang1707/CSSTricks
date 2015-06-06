@@ -10,12 +10,12 @@ title:  "如何在保证 SEO 的同时使用图片标题"
 
 {% highlight html %}
 <style>
-  .headerReplacement {
-     text-indent: -9999px;
-     width: 600px;
-     height: 100px;
-     background: url(pathtoyourimage) #cccccc no-repeat;
-  }
+.headerReplacement {
+    text-indent: -9999px;
+    width: 600px;
+    height: 100px;
+    background: url(pathtoyourimage) #cccccc no-repeat;
+}
 </style>
 {% endhighlight %}
 
