@@ -2,8 +2,8 @@
 title: CSS-Tricks 中文版
 email: lixinyang1026@gmail.com
 description: CSS-Tricks Blog Posts Simplified Chinese Translation
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://li-xinyang.com/CSSTricks" # the base hostname & protocol for your site
+baseurl: "/CSSTricks" # the subpath of your site, e.g. /blog/
+url: "http://li-xinyang.com" # the base hostname & protocol for your site
 github_username:  li-xinyang
 
 
