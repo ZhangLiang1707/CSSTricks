@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "CSS 菜单图片翻转效果"
-permalink: css-menu-with-rollover-image
 excerpt: 下面的例子展示如何利用CSS实现菜单背景图片的替换效果，是时候做一个真实的例子了！
 ---
 

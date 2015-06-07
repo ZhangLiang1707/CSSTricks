@@ -1,0 +1,35 @@
+---
+layout: post
+title: "Creating Clickable DIVs"
+---
+
+DIV's are a must in all CSS-based web design. They give you all kinds of fantastic positioning ability and give structure to your HTML. You can put links inside of a DIV, of course, but sometimes you just want the whole DIV to be clickable as a link. No problem, here is how it's done:
+
+{% highlight html %}
+<h1>2007 方法</h1>
+<div id="div2007" onclick="location.href='http://li-xinyang.com'" style="cursor:pointer;">
+  <p> li-xinyang.com</p>
+</div>
+{% endhighlight %}
+
+The cursor style parameter changes the cursor into the default pointer cursor when a vistor mouses over the DIV, which is a nice visual indication of it's clickability.
+
+**Update May 12, 2011**
+
+Inline JavaScript is way less cool than it was in 2007 (if it ever was). It's far more semantic and accessible to attach functionality via event handlers we apply in separate JavaScript. If we use jQuery, we could do something like:
+
+{% highlight html %}
+<h1>2011 方法</h1>
+<div id="div2011">
+  <p>li-xinyang.com</p><a href="http://li-xinyang.com"></a>
+</div>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+$(document).delegate('#div2011', 'click', function(){
+  window.location = $(this).find('a').attr('href');
+});
+</script>
+{% endhighlight %}
+
+<p data-height="268" data-theme-id="15197" data-slug-hash="eNWvJy" data-default-tab="result" data-user="li-xinyang" class='codepen'>See the Pen <a href='http://codepen.io/li-xinyang/pen/eNWvJy/'>ST-0004-creating-clickable-divs</a> by Li Xinyang (<a href='http://codepen.io/li-xinyang'>@li-xinyang</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
