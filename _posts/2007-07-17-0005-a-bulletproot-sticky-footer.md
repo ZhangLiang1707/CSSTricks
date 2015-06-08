@@ -24,7 +24,7 @@ CSS固定页脚兼容跨浏览器的方法。
 <style type="text/css">
 * {
   margin: 0;
-* {
+}
 html, body {
   height: 100%;
 });
