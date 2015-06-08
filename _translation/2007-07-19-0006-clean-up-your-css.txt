@@ -1,0 +1,20 @@
+---
+layout: post
+title: Clear Up Your CSS
+---
+
+Cascading Style Sheets, at its root, is intended to separate the style of a webpage from the content. That makes sense for control reasons, but also for general code beautification. Just a little browsing through the [CSS Zen Garden](http://www.csszengarden.com/) or some of the great articles on CSS design from Smashing Magazine and you can see the beautiful things CSS can do.
+
+If the results of CSS are so beautiful, should the CSS itself be beautiful? Keeping your code pretty is just a matter of consistent tabbing, spacing, and syntax. You can keep up on that as you go along, but that just slows you down when you are just trying to throw in a quick fix or play around. Fortunately, there are some great tools out there for cleaning up your CSS for you.
+
+[Tabifier](http://tools.arantius.com/tabifier)
+Works for both HTML and CSS. Tabifier is dead simple, you just paste in the CSS, hit the Tabify button, and copy your code back out.
+
+[Pretty Printer](http://www.prettyprinter.de/)
+Pretty Printer is a more full featured beautifier that works for PHP, Java, C++, C, Perl, JavaScript, and CSS. There are a bunch of options for when to add new line breaks and when not to. Works pretty well. One problem is that the output code isn't in it's own box, so you can't Select All to grab it all at once easily.
+
+[Format CSS Online](http://www.lonniebest.com/FormatCSS/)
+More full featured beautifier for CSS exclusively. Has the ability to output as a file so you don't have to worry about copying and pasting at all.
+
+[CSS Formatter and Optimiser](http://floele.flyspray.org/csstidy/css_optimiser.php?lang=en)
+Available in four languages: English, Deutsch, French, and Chinese.
