@@ -1,0 +1,95 @@
+---
+layout: post
+title: A Bulletproof Sticky Footer, Woohoo!
+---
+
+Footers on web pages are a great place to chuck copyright information, contact links, and quick navigational stuff. Visitors are trained to look to the bottom of pages to find these types of things, so why not help them out? One problem is that on pages that are a bit vertically challenged, the footer might end up in the middle of the page instead of down at the bottom of the browser window where it should be.
+
+Shouldn't there be some kind of way to get a footer DIV to just sit at the bottom of the browser window no matter the size of the window? Yes, there should be, there is no obvious solution and has been an issue plaguing CSS kind for too long.
+
+A solution has been found! Ryan Fait has coded a beautifully simple way to do this (with valid code!) and has generously shared the technique [here](http://ryanfait.com/sticky-footer/). It works in all major browsers (IE, FireFox, Safari, and Opera) and is completely free to use at your will. Thanks Ryan!
+
+**Make the Footer Stick to the Bottom of Page**
+
+CSS Sticky Footer is Cross-Browser
+
+This CSS sticky footer code pushes a website's footer to the bottom of a browser window. It is valid CSS and HTML with no unsavory hacks, so it works in all of the major browsers (even the now defunct IE5 and IE6).
+
+View the example CSS Sticky Footer or the HTML5 Sticky Footer.
+
+How to use the CSS Sticky Footer on your website
+
+Add the following lines of CSS to your stylesheet. The negative value for the margin in `.wrapper` is the same number as the height of `.footer` and `.push`. The negative margin should always equal to the full height of the footer (including any padding or borders you may add).
+
+```
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+.footer, .push {
+  height: 4em;
+}
+```
+
+Follow this HTML structure. No content can be outside of the .wrapper and .footer div tags unless it is absolutely positioned with CSS. There should also be no content inside the .push div as it is a hidden element that "pushes" down the footer so it doesn't overlap anything.
+
+```
+<html>
+  <head>
+  <link rel="stylesheet" href="layout.css" ... />
+  </head>
+  <body>
+    <div class="wrapper">
+      <p>Your website content here.</p>
+      <div class="push">
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright (c) 2008</p>
+    </div>
+  </body>
+</html>
+```
+Multicolumn layout with Sticky Footer, add `clear` to the `.push` div
+
+```
+.footer, .push {
+  clear: both;
+}
+```
+
+Adding margins to elements is messing up the footer.
+Simply use padding instead, and all your worries will go away.
+I put this on my site and it doesn't work right in browser X. You have something wrong with your code!
+
+Check to see if the example CSS Sticky Footer page works in that browser. If it does, then you have something wrong with yours!
+Having trouble with the Sticky Footer and ASP.NET?
+
+If you're using ASP.NET, add the following CSS to the Sticky Footer code.
+
+```
+form {
+  height: 100%;
+}
+```
+
+I don't know web design. Can you help me with this?
+
+I charge for website assistance by the hour, and there's a minimum charge of 60 USD. However, there are plenty of CSS and web design forums on the internet where you can get free help. If you really want me to fix it, send me an email and we can discuss pricing.
+
+The height: auto !important; and height: 100%; properties
+I've been getting about an email a week informing me that the footer works fine without height: auto !important; and height: 100%; in the wrapper selector. This is a way to achieve minimum height in IE6 and below, so if you want the footer to stick to the bottom of the page in Internet Explorer 6, don't remove it!
+The Original Introduction from 2007
+
+There are several ways to make a footer stick to the bottom of a page using CSS. But until now, they've used long and messy hacks or a lot of extra HTML markup; this method uses only 15 lines of CSS and hardly any HTML markup. Even better, it's completely valid CSS, and it works in all major browsers. Internet Explorer 5 and up, Firefox, Safari, Opera and more.
+
+<p data-height="268" data-theme-id="15197" data-slug-hash="xGdXgb" data-default-tab="result" data-user="li-xinyang" class='codepen'>See the Pen <a href='http://codepen.io/li-xinyang/pen/xGdXgb/'>ST-0005-sticky-footer</a> by Li Xinyang (<a href='http://codepen.io/li-xinyang'>@li-xinyang</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
