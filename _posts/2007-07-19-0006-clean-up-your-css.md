@@ -35,4 +35,4 @@ Pretty Printer 是一个更全功能的代码整理美化工具，它支持 PHP�
 
 **Sublime Text 2/3**
 
-[Sublime-HTMLPrettify](https://github.com/victorporof/Sublime-HTMLPrettify) 可也可通过 [Package Control]() 进行安装，但是要让它正常工作，机器必须装有 [Node.js](https://nodejs.org/)。安装 Node.js 的方法可以在[这里](http://www.w3cschool.cc/nodejs/nodejs-install-setup.html)（W3CSchool 提供的 Node.js 安装教程）找到。
+[Sublime-HTMLPrettify](https://github.com/victorporof/Sublime-HTMLPrettify) 可也可通过 [Package Control](https://packagecontrol.io/) 进行安装，但是要让它正常工作，机器必须装有 [Node.js](https://nodejs.org/)。安装 Node.js 的方法可以在[这里](http://www.w3cschool.cc/nodejs/nodejs-install-setup.html)（W3CSchool 提供的 Node.js 安装教程）找到。
