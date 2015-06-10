@@ -1,0 +1,26 @@
+---
+layout: post
+title: HTML Declearation Screwing Up CSS
+---
+
+Has your CSS ever been acting funny on you, but it looks as if you've done everything perfectly? It just might be your HTML declarations that are screwing you up. Sometimes when you are just throwing together a little sample, you just use the <html> tag to start your page and everything works just fine. As things get more complicated, and you forget to use a "real" declaration, you may notice things not behaving as you intended. For example, using this little trick to center something isn't working:
+
+```
+.page_wrap {
+margin: 0 auto;
+}
+```
+
+Make sure you are using a page declaration that will support such wizardry. The example below is the most common and should be your go-to HTML declaration used on every page unless you are doing something specific and weird and you know what you are doing.
+
+```
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+```
+
+For a really nice explanation of the different page declarations check out this [HTML Dog](http://www.htmldog.com/guides/htmladvanced/declarations/) article.
+
+UPDATE: Reader David points out that the declaration above isn't exactly the best choice for a declaration being that it isn't supported by IE. After some tests the following declaration seems healthy in both old IE and modern browsers:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+For Microsoft's explanation on the subject, read [here](http://msdn2.microsoft.com/en-us/library/ms535242.aspx).
